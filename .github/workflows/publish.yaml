@@ -29,9 +29,16 @@ jobs:
       - uses: actions/checkout@main
         with:
           fetch-depth: 1
-      - uses: borales/actions-yarn@v3.0.0
+      - uses: actions/setup-node@v3
+      - name: Cache node modules
+        uses: actions/cache@v2
         with:
-          cmd: build
+          path: ~/node_modules
+          key: cache-${{ hashFiles('**/package-lock.json') }}
+      - name: Install and build
+        run: |
+          yarn install
+          yarn build
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
