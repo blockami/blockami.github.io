@@ -166,12 +166,12 @@ export default defineComponent({
       {
         tx_hash:
           "0x468c13d4d614d751b95ee12f5cd6c809a27d516da6d4e4d0ab42b2566f47cc0a",
-        description: "Unstake from contract Multiple NFT ERC721 //check bought",
+        description: "Unstake from contract Multiple NFT ERC721",
       },
       {
         tx_hash:
           "0xbb009b5c578e9ed3fe8ad78b0b991d8c2557abcf6043f066118f783d68c5d0b3",
-        description: "Transfer NFT ERC1155 //check sold",
+        description: "Transfer NFT ERC1155",
       },
       {
         tx_hash:
